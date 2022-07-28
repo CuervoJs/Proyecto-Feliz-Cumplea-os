@@ -1,0 +1,114 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: tomato;
+    display: grid;
+}
+
+.gif1{
+    width: 100%;
+    grid-area: gif1;
+}
+.gif2{
+    width: 100%;
+    grid-area: gif2;
+}
+.gif3{
+    width: 100%;
+    grid-area: gif3;
+}
+.video{
+    width: 100%;
+    grid-area: video;
+}
+
+.contenedor{
+    display: grid; 
+    grid-template: 
+    "gif1" "video" "gif2" auto
+    "gif3" "gif3" "gif3" auto
+    / auto;
+    
+    width: 1300px;
+    height: 400px;
+}
+#titulo{
+    margin: 2rem;
+    text-align: center;
+    font-family: Lucida Sans;
+    font-size: 40px;
+    color: white;
+}
+.boton{
+    background-color: white;
+    border: greenyellow 3px solid;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: greenyellow;
+    font-size: 2rem;
+    font-family: Verdana;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /*Transiciones GA*/
+    transition-property: background-color color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.hola{
+    align-items: center;
+    flex: 0 0 100%;
+}
+.boton:hover{
+    background-color: greenyellow;
+    color: white;
+}
+.sec img{
+    width: 30%;
+    margin: -30px;
+}
+.hola img{
+    width: 50%;
+    border-radius: 5px;
+}
+.bloque1 h1{
+    color: lightgray;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.bloque1 p{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 1rem;
+}
+#kiubo{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+/*Table*/
+@media(min-width: 600px){
+    .hola{
+        flex: 0 0 33.33333333333333%;
+       }
+}
+
+/*Desktop*/
+@media(min-width: 900px){
+    .contenedor{
+        width: 1300px;
+        height: auto;
+        margin: 0px auto;
+        display: grid; 
+        grid-template: 
+        "gif1" "video" "gif2" auto
+        "gif3" "gif3" "gif3" auto
+        / auto;
+    }
+}

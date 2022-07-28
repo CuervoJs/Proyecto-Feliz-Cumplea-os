@@ -1,0 +1,45 @@
+#titulo{
+    text-align: center;
+    font-family: Lucida Sans;
+    font-size: 30px;
+    color: white;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+/*Table*/
+@media(min-width: 600px){
+    #titulo{
+        text-align: center;
+        font-family: Lucida Sans;
+        font-size: 50px;
+        color: white;
+    }
+    img{
+        width: 0%;
+    }
+
+    video{
+        width: 450px;
+    }
+}
+
+/*Desktop*/
+@media(min-width: 1010px){
+    #titulo{
+        text-align: center;
+        font-family: Lucida Sans;
+        font-size: 80px;
+        color: white;
+    }
+    img{
+        visibility: visible;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    video{
+        width: 500px;
+    }
+}
